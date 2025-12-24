@@ -41,6 +41,13 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
+        Tab_Lay1: Tab_Lay1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAB_LAY1";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&mo 1>, <&to 1>;
+        };
     };
 
     macros {
