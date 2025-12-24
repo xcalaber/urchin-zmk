@@ -46,7 +46,32 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAB_LAY1";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&mo 1>, <&to 1>;
+            bindings = <&kp TAB>, <&mo 1>, <&tog 1>;
+        };
+
+        Del_Lay2: Del_Lay2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DEL_LAY2";
+            #binding-cells = <0>;
+            bindings = <&kp DEL>, <&mo 2>, <&tog 2>;
+        };
+
+        Lay_Hold: Lay_Hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAY_HOLD";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
+
+        Key_Hold: Key_Hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KEY_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
         };
     };
 
