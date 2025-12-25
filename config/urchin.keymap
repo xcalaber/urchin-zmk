@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include "keymap_italian.h"
 
@@ -273,7 +274,7 @@
 &kp Q  &kp W           &kp E           &qt R HOME        &kp T             &kp Y                  &kp U              &kp_as_ht I LEFT_BRACKET  &kp_as_ht O RIGHT_BRACKET  &kp P
 &kp A  &qt S LEFT_GUI  &qt D LEFT_ALT  &qt F LEFT_SHIFT  &qt G LCTRL       &qt H RCTRL            &qt J RIGHT_SHIFT  &qt K RIGHT_ALT           &qt L RIGHT_GUI            &kp SEMI
 &kp Z  &qt X HOME      &kp C           &qt V END         &kp B             &kp N                  &kp M              &kp COMMA                 &kp DOT                    &kp SLASH
-                                       &mo 1             &qt LSHIFT SPACE  &qt ENTER RIGHT_SHIFT  &sl 2
+                                       &Tab_Lay1         &qt LSHIFT SPACE  &qt ENTER RIGHT_SHIFT  &Del_Lay2
             >;
         };
 
@@ -284,48 +285,52 @@
         // Used to type regional accents.
         // Used to change the keyboard's settings.
 
-        layer_1 {
+        Alt {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans
             >;
+
+            label = "Alt";
         };
 
-        layer_2 {
+        Config {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans  &bootloader
+&trans       &trans  &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &bt BT_SEL 2  &trans        &trans  &trans  &bt BT_CLR_ALL
+                             &trans  &trans  &trans        &trans
             >;
+
+            label = "Config";
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                     &none  &to 0  &to 1  &none
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                     &none  &to 0  &to 1  &none
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                     &none  &to 0  &to 1  &none
             >;
         };
     };
