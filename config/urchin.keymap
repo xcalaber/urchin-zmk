@@ -215,6 +215,51 @@
             bindings = <&kp RIGHT>;
             key-positions = <12 13>;
         };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <19 18>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <22 21>;
+        };
+
+        paste {
+            bindings = <&kp LC(P)>;
+            key-positions = <23 22>;
+        };
+
+        all {
+            bindings = <&kp LC(A)>;
+            key-positions = <11 10>;
+        };
+
+        paste_clip {
+            bindings = <&kp LG(P)>;
+            key-positions = <24 23>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <20 21>;
+        };
+
+        lock {
+            bindings = <&kp LG(L)>;
+            key-positions = <29 19>;
+        };
+
+        pg_up {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <2 4>;
+        };
+
+        pg_dn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <24 22>;
+        };
     };
 
     keymap {
