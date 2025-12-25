@@ -268,7 +268,7 @@
 
         // Base alpha layer
 
-        default_layer {
+        Base {
             label = "Base";
             bindings = <
 &kp Q       &kp W           &kp E           &qt R HOME        &kp T             &kp Y                  &kp U              &kp_as_ht I LEFT_BRACKET  &kp_as_ht O RIGHT_BRACKET  &kp P
