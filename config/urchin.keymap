@@ -278,10 +278,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp Q  &kp W           &kp E           &qt R HOME        &kp T             &kp Y                  &kp U              &kp_as_ht I LEFT_BRACKET  &kp_as_ht O RIGHT_BRACKET  &kp P
-&kp A  &qt S LEFT_GUI  &qt D LEFT_ALT  &qt F LEFT_SHIFT  &qt G LCTRL       &qt H RCTRL            &qt J RIGHT_SHIFT  &qt K RIGHT_ALT           &qt L RIGHT_GUI            &kp SEMI
-&kp Z  &qt X HOME      &kp C           &qt V END         &kp B             &kp N                  &kp M              &kp COMMA                 &kp DOT                    &kp SLASH
-                                       &Tab_Lay1         &qt LSHIFT SPACE  &qt ENTER RIGHT_SHIFT  &Del_Lay2
+&kp Q       &kp W           &kp E           &qt R HOME        &kp T             &kp Y                  &kp U              &kp_as_ht I LEFT_BRACKET  &kp_as_ht O RIGHT_BRACKET  &kp P
+&qt A CAPS  &qt S LEFT_GUI  &qt D LEFT_ALT  &qt F LEFT_SHIFT  &qt G LCTRL       &qt H RCTRL            &qt J RIGHT_SHIFT  &qt K RIGHT_ALT           &qt L RIGHT_GUI            &as SEMI
+&kp Z       &qt X HOME      &kp C           &qt V END         &kp B             &kp N                  &kp M              &as COMMA                 &as DOT                    &as SLASH
+                                            &Tab_Lay1         &qt LSHIFT SPACE  &qt ENTER RIGHT_SHIFT  &Del_Lay2
             >;
         };
 
