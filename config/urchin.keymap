@@ -218,7 +218,7 @@
         };
 
         dash {
-            bindings = <&kp MINUS>;
+            bindings = <&as MINUS>;
             key-positions = <19 18>;
         };
 
