@@ -263,13 +263,13 @@
         };
 
         UnSitck1 {
-            bindings = <&unstick>;
+            bindings = <&sys_reset>;
             key-positions = <27 26 29 28>;
         };
 
         Unstick2 {
-            bindings = <&unstick>;
-            key-positions = <21 22 23 20>;
+            bindings = <&sys_reset>;
+            key-positions = <22 23 20 21>;
         };
     };
 
