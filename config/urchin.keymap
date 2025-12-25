@@ -261,6 +261,16 @@
             bindings = <&kp PAGE_DOWN>;
             key-positions = <24 22>;
         };
+
+        UnSitck1 {
+            bindings = <&unstick>;
+            key-positions = <27 26 29 28>;
+        };
+
+        Unstick2 {
+            bindings = <&unstick>;
+            key-positions = <21 22 23 20>;
+        };
     };
 
     keymap {
