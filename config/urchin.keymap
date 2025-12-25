@@ -82,6 +82,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
+
+        kp_as_ht: keypress_to_autoshift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KEYPRESS_TO_AUTOSHIFT";
+            bindings = <&as>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
     };
 
     macros {
