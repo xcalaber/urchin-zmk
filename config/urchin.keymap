@@ -282,7 +282,7 @@
             label = "Base";
             bindings = <
 &kp Q       &kp W           &kp E           &qt HOME R        &kp T              &kp Y              &kp U              &kp_as_ht LEFT_BRACKET I  &kp_as_ht RIGHT_BRACKET O  &kp P
-&qt CAPS A  &qt LEFT_GUI S  &qt LEFT_ALT G  &qt LEFT_SHIFT F  &qt LCTRL G        &qt RCTRL H        &qt RIGHT_SHIFT J  &qt RIGHT_ALT K           &qt RIGHT_GUI L            &as SEMI
+&qt CAPS A  &qt LEFT_GUI S  &qt LEFT_ALT D  &qt LEFT_SHIFT F  &qt LCTRL G        &qt RCTRL H        &qt RIGHT_SHIFT J  &qt RIGHT_ALT K           &qt RIGHT_GUI L            &as SEMI
 &kp Z       &qt X HOME      &kp C           &qt END V         &kp B              &kp N              &kp M              &as COMMA                 &as DOT                    &as SLASH
                                             &Tab_Lay1         &Lay_Hold 2 SPACE  &Lay_Hold 1 ENTER  &Del_Lay2
             >;
